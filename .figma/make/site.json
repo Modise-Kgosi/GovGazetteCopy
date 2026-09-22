@@ -1,0 +1,10 @@
+{
+  "description": "Streamlines company onboarding and tender management with intelligent dashboards, compliance tracking, and collaborative tools for bid teams.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --font-family-display: 'Bricolage Grotesque', 'Inter', sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+
+  --color-background: #FAF7F4;
+  --color-surface: #FFFFFF;
+  --color-panel: #F4F1ED;
+  --color-ink: #1A1A17;
+  --color-muted: #6C6A64;
+  --color-subtle: #9E9B94;
+  --color-border: #E7E3DD;
+  --color-border-strong: #D8D3CB;
+
+  --color-primary: #0E8574;
+  --color-primary-hover: #0B6F61;
+  --color-primary-tint: #E1F1EE;
+
+  --color-ai: #7C3AED;
+  --color-ai-tint: #F1EBFE;
+
+  --color-healthy: #047857;
+  --color-healthy-bg: #D6F0E4;
+  --color-warn: #C2680A;
+  --color-warn-bg: #FBEBD6;
+  --color-danger: #C0392B;
+  --color-danger-bg: #FBE4E1;
+
+  --color-ink-panel: #16211F;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-background);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-family-display);
+  letter-spacing: -0.02em;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: #D4D1CB transparent;
+}
+::selection {
+  background: var(--color-primary-tint);
+  color: var(--color-primary-hover);
+}
